@@ -1,0 +1,25 @@
+/* pages/wifiConfig/index.wxss */
+.page {
+    height: 100%;
+}
+.weui-form{
+    width: 100%;
+    padding-top: 20px;
+}
+.weui-tab__content{
+    display: flex;
+}
+.button-sp-area {
+    padding-top: 15px;
+    text-align: center;
+}
+.button-sp-area navigator{
+    display: inline-block;
+    margin-right: 5px;
+    color: #ffffff;
+}
+.weui-textarea{
+    border: 1px solid #8e8e8e;
+    border-radius: 5px;
+    min-height: 320px;
+}

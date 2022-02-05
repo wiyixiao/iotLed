@@ -1,0 +1,43 @@
+{
+    "pages": [
+        "pages/index/index",
+        "pages/setting/index",
+        "pages/about/index"
+    ],
+    "window": {
+        "backgroundTextStyle": "light",
+        "navigationBarBackgroundColor": "#fff",
+        "navigationBarTitleText": "小空助手",
+        "navigationBarTextStyle": "black"
+    },
+
+    "tabBar": {
+        "color": "#ccc",
+        "selectedColor": "#35495e",
+        "borderStyle": "white",
+        "backgroundColor": "#f9f9f9",
+        "list": [
+          {
+            "text": "设备",
+            "pagePath": "pages/index/index",
+            "iconPath": "pages/images/icon_tabbar_device.png",
+            "selectedIconPath": "pages/images/icon_tabbar_device_s.png"
+          },
+          {
+            "text": "配置",
+            "pagePath": "pages/setting/index",
+            "iconPath": "pages/images/icon_tabbar_config.png",
+            "selectedIconPath": "pages/images/icon_tabbar_config_s.png"
+          },
+          {
+            "text": "关于",
+            "pagePath": "pages/about/index",
+            "iconPath": "pages/images/icon_tabbar_about.png",
+            "selectedIconPath": "pages/images/icon_tabbar_about_s.png"
+          }
+        ]
+      },
+    "style": "v2",
+    "sitemapLocation": "sitemap.json",
+    "lazyCodeLoading": "requiredComponents"
+}

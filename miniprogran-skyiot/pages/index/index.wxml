@@ -1,0 +1,36 @@
+<page-meta root-font-size="system"/>
+<view class="page" data-weui-theme="{{theme}}" data-weui-mode="{{mode}}">
+	<view class="weui-form">
+		<view class="weui-form__text-area">
+			<view class="weui-form__title">卧室灯</view>
+      <view class="weui-form__desc">{{state?"On":"Off"}}</view>
+		</view>
+		<view class="weui-form__control-area">
+			<view class="weui-cells__group weui-cells__group_form">
+				<view class="weui-cells">
+          <label bindtap="switchBtnClick" data-checked="{{state}}" 
+          class="weui-cell weui-cell_active weui-cell_switch">
+              <view class="weui-cell__bd">{{device}}</view>
+              <view class="weui-cell__ft">
+                  <view class="weui-switch-cp">
+                      <checkbox class="weui-switch-cp__input switch_led" 
+                      checked="{{state}}"/>
+                      <view class="weui-switch-cp__box"></view>
+                  </view>
+              </view>
+          </label>
+				</view>
+			</view>
+		</view>
+	</view>
+    <view aria-role="alert" class="fadeIn {{hideTextToast ? 'fadeOut' : ''}}" wx:if="{{textToast}}">
+		<view class="weui-mask_transparent"></view>
+		<view class="weui-toast weui-toast_text">
+			<view class="weui-toast__content">{{toastVars.toastInfo}}</view>
+		</view>
+	</view>
+    <view class="button-sp-area btn_wr weui-footer weui-footer_fixed-bottom">
+        <view aria-role="alert" wx:if="{{topTips}}" class="weui-toptips weui-toptips_warn fadeIn {{hide ? 'fadeOut' : ''}}">{{connectState}}</view>
+        
+    </view>
+</view>

@@ -1,0 +1,18 @@
+<!--pages/about/index.wxml-->
+<page-meta root-font-size="system"/>
+<view class="page" data-weui-theme="{{theme}}" data-weui-mode="{{mode}}">
+    <view class="page__hd">
+        <view aria-role="heading" aria-level="1" class="page__title">关于</view>
+        <view class="page__desc">智能开关微信小程序\n\n</view>
+        <view class="page__desc">设备订阅主题:</view>
+        <view class="page__desc">{{slaveTopic}}</view>
+        <view class="page__desc">小程序订阅主题:</view>
+        <view class="page__desc">{{masterTopic}}</view>
+    </view>
+    <view class="weui-footer weui-footer_fixed-bottom">
+			<view class="weui-footer__links">
+				<navigator class="weui-footer__link weui-wa-hotarea" url="javascript:home();"></navigator>
+			</view>
+			<view class="weui-footer__text">Copyright &copy; 2021-2022 wiyixiao</view>
+		</view>
+</view>
